@@ -1,0 +1,274 @@
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:07:22.657] ProjectManageService.Error 13 
+Message:给定关键字不在字典中。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:12:24.690] ProjectManageService.Error 11 
+Message:对象名 'UnitTable' 无效。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:13:27.453] UserService.Error 11 
+UpdateUser 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 84
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.UserService.UpdateUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 242
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:14:29.400] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'p_untid' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 169
+ClientConnectionId:07f0d147-8666-49c4-a770-2c453b3842ae
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:24:55.220] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 195
+ClientConnectionId:d8e093ac-25c9-4a89-8893-b50f0325fd25
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:26:25.672] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 195
+ClientConnectionId:2d2fc67e-54fe-43ac-9234-3dd83bb284c6
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:30:26.078] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager)
+ClientConnectionId:cf9f502b-2e34-4fe1-84e5-f1c30b3efbaf
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:30:54.028] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 195
+ClientConnectionId:8f8d6197-ae9c-43cd-999b-93345b430eb9
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:32:12.944] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager)
+ClientConnectionId:9b17212b-e664-4aaa-8c92-72c262c0b2d8
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:32:37.520] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 195
+ClientConnectionId:57110826-445e-49f0-9914-468b17f3d391
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:32:56.969] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 'ret' 附近有语法错误。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 127
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 195
+ClientConnectionId:186c846a-4083-457c-8df3-a5eec3091aba
+Error Number:102,State:1,Class:15
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:36:02.070] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(GridPager pager)
+ClientConnectionId:2187b14f-11a2-40b5-8639-9a318926a836
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:36:42.896] UserService.Error 11 
+UpdateUser 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 84
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.UserService.UpdateUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 242
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:38:00.640] UserService.Error 11 
+UpdateUser 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 84
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.UserService.UpdateUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 242
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:44:28.561] UserService.Error 13 
+DeleteUser 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.DeleteUser(String ids) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 325
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:46:03.283] UserService.Error 13 
+DeleteUser 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserLogService.InsertLog(String account, String name, String ip, DateTime time, String function, String desc, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserLogService.cs:行号 126
+   在 GraphicsEvaluatePlatform.Service.UserService.DeleteUser(String ids) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 323
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:49:12.858] ProjectManageService.Error 13 
+Message:违反了 PRIMARY KEY 约束 'PK_T_PROJECTS'。不能在对象 'dbo.t_Projects' 中插入重复键。
+语句已终止。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:49:13.070] ProjectManagementService.Error 13 
+Delete 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\OperationLogService.cs:行号 36
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Delete(String ids) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 259
+ClientConnectionId:aa2a900b-33a8-49f6-9ef5-886300161fd7
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:52:02.004] ProjectManageService.Error 11 
+Message:违反了 PRIMARY KEY 约束 'PK_T_PROJECTS'。不能在对象 'dbo.t_Projects' 中插入重复键。
+语句已终止。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 09:52:45.692] ProjectManageService.Error 11 
+Message:违反了 PRIMARY KEY 约束 'PK_T_PROJECTS'。不能在对象 'dbo.t_Projects' 中插入重复键。
+语句已终止。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 10:01:47.974] ProjectManageService.Error 11 
+Message:违反了 PRIMARY KEY 约束 'PK_T_PROJECTS'。不能在对象 'dbo.t_Projects' 中插入重复键。
+语句已终止。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 10:02:30.046] ProjectManageService.Error 11 
+Message:违反了 PRIMARY KEY 约束 'PK_T_PROJECTS'。不能在对象 'dbo.t_Projects' 中插入重复键。
+语句已终止。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-03 10:08:45.312] ProjectManagementService.Error 11 
+Delete 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\OperationLogService.cs:行号 36
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Delete(String ids) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 270
+ClientConnectionId:1d57a88f-83fb-4fcb-a059-f8dc3ed4d024
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-03 10:09:21.597] ProjectManagementService.Error 11 
+Delete 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\OperationLogService.cs:行号 36
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Delete(String ids) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 270
+ClientConnectionId:23306627-9225-44fa-8a90-b25357d85c81
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:02:31.649] ProjectManagementService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 176
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 41
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:04:47.083] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 176
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 41

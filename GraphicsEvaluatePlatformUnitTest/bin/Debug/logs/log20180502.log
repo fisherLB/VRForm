@@ -1,0 +1,186 @@
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:39:28.997] ProjectManagementService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:40:26.643] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:41:12.137] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:42:55.358] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:43:23.360] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:51:29.736] ProjectManagementService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:53:30.307] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:54:41.238] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-02 17:55:34.917] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 84
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 57
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:07:11.923] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:08:49.759] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:09:38.353] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:13:40.780] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 84
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 62
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:15:07.278] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.TypeInitializationException: “GraphicsEvaluatePlatform.Service.ServiceBase”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:15:46.545] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'p_Id'，表 'GraphicsEvaluatePlatform.dbo.t_Projects'；列不允许有 Null 值。INSERT 失败。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 63
+ClientConnectionId:3b41d407-4168-4c74-a20a-7861a98b9543
+Error Number:515,State:2,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:16:49.595] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'p_Id'，表 'GraphicsEvaluatePlatform.dbo.t_Projects'；列不允许有 Null 值。INSERT 失败。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 63
+ClientConnectionId:e84011da-6f94-4cca-8868-04a8223fdd01
+Error Number:515,State:2,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:19:10.128] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+ClientConnectionId:cc049623-e9b0-47e1-905b-40f64755d320
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-02 18:20:32.661] ProjectManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'OperationLog' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 39
+   在 GraphicsEvaluatePlatform.Service.OperationLogService.InsertLog(String UserID, String IP, DateTime time, String desc, String type)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Add(Dictionary`2 Pro)
+ClientConnectionId:b60ba054-a364-4850-b8dd-523a261be29a
+Error Number:208,State:1,Class:16

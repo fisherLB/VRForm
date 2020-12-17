@@ -1,0 +1,84 @@
+
+===================== Application_Error_Start =====================
+[2018-05-21 11:06:23.769] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Host 'LSRDesign' is not allowed to connect to this MySQL server
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 308
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2018-05-21 11:06:34.878] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Host 'LSRDesign' is not allowed to connect to this MySQL server
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 308
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2018-05-21 11:06:43.724] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Host 'LSRDesign' is not allowed to connect to this MySQL server
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 308
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2018-05-21 11:07:21.455] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Host 'LSRDesign' is not allowed to connect to this MySQL server
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 308
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66

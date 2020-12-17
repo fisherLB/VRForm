@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="GraphicsEvaluatePlatform.Client.Views.PagerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" d:DesignHeight="56" d:DesignWidth="642">
+      <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="共 " HorizontalAlignment="Left" Height="15" Margin="10,0,0,0"/>
+            <TextBlock Text="{Binding RecordCount}" VerticalAlignment="Center"/>
+            <TextBlock Text=" 条" VerticalAlignment="Center"/>
+        </StackPanel>
+        <TextBox Text="{Binding PageCount}" Visibility="Collapsed"/>
+        <Button Grid.Column="2" ToolTip="首页" Padding="0" Command="{Binding HomePageCommand}">
+            <Button.Content>
+                <Image Width="12" Source="../Resources/Images/fastrewind.png"/>
+            </Button.Content>
+        </Button>
+        <Button Grid.Column="3" ToolTip="上一页" Padding="0" Command="{Binding PreviousPageCommand}">
+            <Button.Content>
+                <Image Width="12" Source="../Resources/Images/skiprewind.png"/>
+            </Button.Content>
+        </Button>
+
+        <WrapPanel Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="第" VerticalAlignment="Center"/>
+            <ComboBox ItemsSource="{Binding IndexList}" SelectedItem="{Binding PageIndex}" Width="50"/>
+            <TextBlock Text="页" VerticalAlignment="Center"/>
+        </WrapPanel>
+
+        <Button Grid.Column="5" ToolTip="下一页" Padding="0" Command="{Binding NextPageCommand}">
+            <Button.Content>
+                <Image Width="12" Source="../Resources/Images/skipforward.png"/>
+            </Button.Content>
+        </Button>
+        <Button Grid.Column="6" ToolTip="尾页" Padding="0" Command="{Binding TailPageCommand}">
+            <Button.Content>
+                <Image Width="12" Source="../Resources/Images/fastforward.png"/>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</UserControl>

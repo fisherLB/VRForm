@@ -1,0 +1,22 @@
+
+===================== Application_Error_Start =====================
+[2018-05-15 10:01:26.597] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc limit 0,10' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId, Int32 pageNum, Int32 currentlyPage) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 43
+
+===================== Application_Error_Start =====================
+[2018-05-15 10:07:52.353] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10order by  name asc  asc limit 0,10' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms)
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col)
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col)
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId, Int32 pageNum, Int32 currentlyPage) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 43

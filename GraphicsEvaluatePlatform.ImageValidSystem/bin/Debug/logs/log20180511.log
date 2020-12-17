@@ -1,0 +1,22 @@
+
+===================== Application_Error_Start =====================
+[2018-05-11 16:38:26.774] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'output inserted.* where Us_account='admin' and Us_Password='20-2C-B9-62-AC-59-07' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 90
+
+===================== Application_Error_Start =====================
+[2018-05-11 18:44:29.942] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'Id' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 106

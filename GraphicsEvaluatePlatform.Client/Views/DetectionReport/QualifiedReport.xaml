@@ -1,0 +1,47 @@
+﻿<Page x:Class="GraphicsEvaluatePlatform.Client.Views.DetectionReport.QualifiedReport"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GraphicsEvaluatePlatform.Client.Views.DetectionReport"
+      mc:Ignorable="d" 
+      Title="QualifiedReport" Height="631.818" d:DesignWidth="1300" Background="#FF001E42" VerticalAlignment="Top">
+
+    <Grid>
+        <Button x:Name="export" Content="导出" HorizontalAlignment="Left" Margin="500,0,0,596" Width="86" Height="26"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" >
+            <!--<Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentControl Name="cc">
+                        <Image Source="/Images/btn_del.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>-->
+
+        </Button>
+        <Button x:Name="See" Content="查看" HorizontalAlignment="Left" Margin="410,0,0,596" Width="85" Height="26"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" >
+            <!--<Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/btn_Print.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>-->
+
+        </Button>
+        <TextBox x:Name="textBox1" Margin="10,0,0,597" TextWrapping="Wrap" Text="" Background="#FF0073B6" BorderBrush="#FF0083CC" Foreground="White" Width="320" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <DataGrid x:Name="dataGrid" Height="576" Margin="255,0,10,10" VerticalAlignment="Bottom"/>
+        <TreeView x:Name="treeView" Height="576" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="240"/>
+
+        <Button x:Name="search" Content="搜索" Margin="335,0,0,597" Height="25"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="70" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/search.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
+    </Grid>
+</Page>

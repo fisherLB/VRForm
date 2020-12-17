@@ -1,0 +1,80 @@
+﻿<Page x:Class="GraphicsEvaluatePlatform.Client.Views.userManage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GraphicsEvaluatePlatform.Client.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="660"
+      Title="userManage" Background="#FF001E42" Width="2194" VerticalAlignment="Top">
+    <Grid Margin="-1,-0.5,1,0.5" VerticalAlignment="Top" RenderTransformOrigin="0.497,0.918">
+        <StackPanel Margin="-1,6,1,-423">
+            <Button x:Name="search" Content="搜索" Margin="548,0,0,-64" Height="25"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="70" >
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentControl x:Name="cc">
+                            <Image Source="../../Images/search.png" />
+                        </ContentControl>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="edit" Content="修改" HorizontalAlignment="Left" Margin="111,0,0,-65" Width="86" Height="26"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" Command="{Binding OpenEditWinCommand}">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentControl x:Name="cc">
+                            <Image Source="../../Images/btn_edit.png" />
+                        </ContentControl>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <TextBox x:Name="textBox1" Margin="303,0,0,-64" TextWrapping="Wrap" Text="" Background="#FF0073B6" BorderBrush="#FF0083CC" Foreground="White" Width="222" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+            <Button x:Name="del" Content="删除" HorizontalAlignment="Left" Margin="212,0,0,-65" Width="86" Height="26"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" >
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentControl x:Name="cc">
+                            <Image Source="../../Images/btn_del.png" />
+                        </ContentControl>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button x:Name="add" Content="新建" Margin="9,0,0,-65" Height="26"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" HorizontalAlignment="Left" Width="86" VerticalAlignment="Bottom" Command="{Binding OpenAddWincCommand}" >
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentControl x:Name="cc">
+                            <Image Source="../../Images/btn_new.png" />
+                        </ContentControl>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <TextBox IsReadOnly="True" TextAlignment="Center" Width="120" Text="{Binding Count}" Margin="4,0" />
+            <DataGrid Margin="9,84,10,-416"  AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False"
+                    CanUserAddRows="False" FontSize="16" Height="515" ItemsSource="{Binding UserMenuList}">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="选中" SortMemberPath="IsSelected" Width="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected,  UpdateSourceTrigger=PropertyChanged}"
+                                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                                        Command="{Binding Path=DataContext.SelectMenuItemCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="ID" Binding="{Binding userModel.Us_id}" Width="100" Visibility="Hidden"/>
+                    <DataGridTextColumn Header="姓名" Binding="{Binding userModel.Us_name}" Width="150" />
+                    <DataGridTextColumn Header="用户名" Binding="{Binding userModel.Us_account}" Width="150"/>
+                    <DataGridTextColumn Header="密码" Binding="{Binding userModel.Us_Password}" Width="100"/>
+                    <DataGridTextColumn Header="角色" Binding="{Binding userModel.Us_type}" Width="150"/>
+                    <DataGridTextColumn Header="创建时间" Binding="{Binding userModel.Us_create_time}" Width="120"/>
+                    <DataGridTextColumn Header="是否激活" Binding="{Binding userModel.Us_status}" Width="100"/>
+                    <DataGridTextColumn Header="备注" Binding="{Binding userModel.Us_remark}" Width="150"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <StackPanel Name="grid" Margin="72,209,82,-581"></StackPanel>
+        <local:PagerControl x:Name="userPager" Margin="30,553,1864,-563"/>
+    </Grid>
+</Page>

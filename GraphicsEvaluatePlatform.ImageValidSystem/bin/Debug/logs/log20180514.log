@@ -1,0 +1,495 @@
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:07:24.431] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 308
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:09:46.504] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'output inserted.* where Us_account='admin' and Us_Password='20-2C-B9-62-AC-59-07' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 97
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:15:06.142] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and projectId='bad80a75-818f-45a3-9148-a5e3a98545b3' order by name' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 39
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:19:07.482] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and projectId='bad80a75-818f-45a3-9148-a5e3a98545b3' order by name' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:19:11.733] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Transactions.TransactionAbortedException: 已中止事务。
+   在 System.Transactions.TransactionStateAborted.CreateAbortingClone(InternalTransaction tx)
+   在 System.Transactions.DependentTransaction..ctor(IsolationLevel isoLevel, InternalTransaction internalTransaction, Boolean blocking)
+   在 System.Transactions.Transaction.DependentClone(DependentCloneOption cloneOption)
+   在 System.Transactions.TransactionScope.SetCurrent(Transaction newCurrent)
+   在 System.Transactions.TransactionScope.PushScope()
+   在 System.Transactions.TransactionScope..ctor(TransactionScopeOption scopeOption, TransactionScopeAsyncFlowOption asyncFlowOption)
+   在 System.Transactions.TransactionScope..ctor()
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:23:55.411] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry 'abfa16f3-0a22-4780-b5d0-eb60072c7c70' for key 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 107
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:24:24.959] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry 'abfa16f3-0a22-4780-b5d0-eb60072c7c70' for key 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 107
+
+===================== Application_Error_Start =====================
+[2018-05-14 09:31:15.266] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'output inserted.* where Us_account='admin' and Us_Password='20-2C-B9-62-AC-59-07' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 97
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:08:13.973] BllProject.Error 5 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 83
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:10:30.700] BllProject.Error 6 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 83
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:12:57.740] BllProject.Error 7 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 83
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:14:01.739] BllProject.Error 9 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:16:43.268] BllProject.Error 10 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:16:48.951] BllProject.Error 10 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.Transactions.TransactionAbortedException: 已中止事务。
+   在 System.Transactions.TransactionStateAborted.CreateAbortingClone(InternalTransaction tx)
+   在 System.Transactions.DependentTransaction..ctor(IsolationLevel isoLevel, InternalTransaction internalTransaction, Boolean blocking)
+   在 System.Transactions.Transaction.DependentClone(DependentCloneOption cloneOption)
+   在 System.Transactions.TransactionScope.SetCurrent(Transaction newCurrent)
+   在 System.Transactions.TransactionScope.PushScope()
+   在 System.Transactions.TransactionScope..ctor(TransactionScopeOption scopeOption, TransactionScopeAsyncFlowOption asyncFlowOption)
+   在 System.Transactions.TransactionScope..ctor()
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:17:10.636] BllProject.Error 10 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.Transactions.TransactionAbortedException: 已中止事务。
+   在 System.Transactions.TransactionStateAborted.CreateAbortingClone(InternalTransaction tx)
+   在 System.Transactions.DependentTransaction..ctor(IsolationLevel isoLevel, InternalTransaction internalTransaction, Boolean blocking)
+   在 System.Transactions.Transaction.DependentClone(DependentCloneOption cloneOption)
+   在 System.Transactions.TransactionScope.SetCurrent(Transaction newCurrent)
+   在 System.Transactions.TransactionScope.PushScope()
+   在 System.Transactions.TransactionScope..ctor(TransactionScopeOption scopeOption, TransactionScopeAsyncFlowOption asyncFlowOption)
+   在 System.Transactions.TransactionScope..ctor()
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:18:42.222] BllProject.Error 13 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:19:44.808] BllProject.Error 14 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:20:45.944] BllProject.Error 14 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:20:58.581] BllProject.Error 14 
+GetDetail 发生异常
+
+===================== Application_Error_End =====================
+System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.GetDetail(String id)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:36:14.422] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'projectId' in 'where clause'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 40
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:41:05.716] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name asc' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:41:13.300] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name asc' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:56:03.803] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '098fd798-329c-490d-a614-2a97bb3054b3' for key 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 149
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:56:43.682] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '098fd798-329c-490d-a614-2a97bb3054b3' for key 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 149
+
+===================== Application_Error_Start =====================
+[2018-05-14 10:57:03.377] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '098fd798-329c-490d-a614-2a97bb3054b3' for key 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Save(Projects model, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 149
+
+===================== Application_Error_Start =====================
+[2018-05-14 11:15:47.071] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@p_Id' has already been defined.
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Update(Projects model, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllProject.cs:行号 229
+
+===================== Application_Error_Start =====================
+[2018-05-14 11:16:56.360] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@p_Id' has already been defined.
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Update(Projects model, String type)
+
+===================== Application_Error_Start =====================
+[2018-05-14 11:17:02.170] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@p_Id' has already been defined.
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 547
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 183
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 72
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Update(Projects model, String type)
+
+===================== Application_Error_Start =====================
+[2018-05-14 11:19:22.488] ProjectManagementService.Error 1 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'output inserted.* where p_Id='098fd798-329c-490d-a614-2a97bb3054b3'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSql(String SQLString, MySqlParameter[] cmdParms)
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id)
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Update(Dictionary`2 dic, String tableName, Dictionary`2 whereList, String id)
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProject.Update(Projects model, String type)
+
+===================== Application_Error_Start =====================
+[2018-05-14 14:53:54.734] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_userlog' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 611
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 135
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.UserlogBll.InsertLog(String account, String name, String ip, DateTime time, String function, String desc, String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\UserlogBll.cs:行号 41
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 94
+
+===================== Application_Error_Start =====================
+[2018-05-14 15:36:23.604] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'projectname' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 15:37:11.936] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'projectname' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 15:37:17.961] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'paht' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 15:37:22.097] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'paht' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 15:37:30.345] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'paht' in 'field list'
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 248
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetList(String cols, String tableName, Dictionary`2 whereList, String orderby) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 114
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:08:33.797] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture where projectId='') w2 WHERE' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:09:56.184] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture where projectId='' ) w2 WHER' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:10:31.636] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture where projectId='' ) w2 WHER' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 42
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:11:56.530] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture where projectId='' ) w2 WHER' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:12:16.232] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture where projectId='' ) w2 WHER' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 42
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:14:08.487] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  order by name asc ) n,id FROM  t_picture) w2 WHERE w1.id = w2.id AND ' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId)
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:14:28.305] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  name asc ) n,id FROM  t_picture) w2 WHERE w1.id = w2.id AND w2.n > 0 ' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 42
+
+===================== Application_Error_Start =====================
+[2018-05-14 16:16:12.885] BllPicture.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by  name asc ) n,id FROM  t_picture) w2 WHERE w1.id = w2.id AND w2.n > 0 ' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 328
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllPicture.GetList(String unitId, String projectId) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\BllPicture.cs:行号 42

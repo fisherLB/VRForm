@@ -1,0 +1,8 @@
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:29:49.610] UnitManageService.Error 8 
+GetUnitComboTree 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.UnitManageService.GetUnitComboTree() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UnitManageService.cs:行号 102

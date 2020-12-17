@@ -1,0 +1,247 @@
+
+===================== Application_Error_Start =====================
+[2018-05-07 09:25:32.484] ClientManagementService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: 发生一个或多个错误。 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:3306
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+---> (内部异常 #0) System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 127.0.0.1:3306
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 38
+
+===================== Application_Error_Start =====================
+[2018-05-07 09:39:45.348] unit.Error 13 
+新建单位AddUnit执行过程发生错误
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UnitManageService.AddUnit(Dictionary`2 unit) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UnitManageService.cs:行号 109
+
+===================== Application_Error_Start =====================
+[2018-05-07 09:40:08.682] unit.Error 11 
+新建单位AddUnit执行过程发生错误
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UnitManageService.AddUnit(Dictionary`2 unit) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UnitManageService.cs:行号 109
+
+===================== Application_Error_Start =====================
+[2018-05-07 09:42:22.982] unit.Error 11 
+新建单位AddUnit执行过程发生错误
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type)
+   在 GraphicsEvaluatePlatform.Service.UnitManageService.AddUnit(Dictionary`2 unit)
+
+===================== Application_Error_Start =====================
+[2018-05-07 10:01:09.511] UserService.Error 13 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 GraphicsEvaluatePlatform.Service.UserService.AddUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 174
+
+===================== Application_Error_Start =====================
+[2018-05-07 10:01:31.995] UserService.Error 11 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 GraphicsEvaluatePlatform.Service.UserService.AddUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 174
+
+===================== Application_Error_Start =====================
+[2018-05-07 10:04:53.678] UserService.Error 11 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 GraphicsEvaluatePlatform.Service.UserService.AddUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 174
+
+===================== Application_Error_Start =====================
+[2018-05-07 10:05:09.497] UserService.Error 11 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 GraphicsEvaluatePlatform.Service.UserService.AddUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 174
+
+===================== Application_Error_Start =====================
+[2018-05-07 10:05:23.813] UserService.Error 11 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 GraphicsEvaluatePlatform.Service.UserService.AddUser(Dictionary`2 user) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 174
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:01:34.667] DetectionSettingService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsetting' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:03:23.336] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsetting' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic)
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:03:50.962] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:05:03.152] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:05:47.587] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:07:27.872] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:32:22.100] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 442
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 334
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:33:26.603] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'graphicsevaluateplatform.t_detectionsettings' doesn't exist
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.GetSingle(String SQLString, MySqlParameter[] cmdParms)
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetCount(String tableName, String where)
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where)
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 35
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:34:00.835] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'Remarks' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 76
+ClientConnectionId:e3b76efd-22b1-40f0-a7e1-7ef257271a42
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:36:17.553] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'Remarks' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 76
+ClientConnectionId:b1685087-d073-4ae5-9b5b-ac244b83b157
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:37:20.954] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'Remarks' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 76
+ClientConnectionId:edb8e754-774f-42fd-b67b-5b216d06aa53
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-07 17:39:47.181] DetectionSettingService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'Remarks' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.ExecuteSqlGetDataSet(CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 558
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 179
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Add(Dictionary`2 dic, String tableName) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 40
+   在 GraphicsEvaluatePlatform.Service.DetectionSettingService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\DetectionSettingService.cs:行号 76
+ClientConnectionId:b31ada83-d0a6-47b4-943f-58b61a832470
+Error Number:207,State:1,Class:16

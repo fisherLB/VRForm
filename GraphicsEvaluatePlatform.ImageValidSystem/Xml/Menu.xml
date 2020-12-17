@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuStrip>
+  <Menu Text="文件(File)" ShortKey="Alt+F">
+    <Item Type="MenuItem" Text="修改窗口颜色">
+      <Item Type="MenuItem" Text="红色" ShortKey="Shift+F6"
+       FunctionAttribute="ColorToRed" />
+      <Item Type="MenuItem" Text="绿色" ShortKey="Shift+F7"
+       FunctionAttribute="ColorToLawnGreen" />
+    </Item>
+    <Item Type="Seperator" />
+    <Item Type="MenuItem" Text="普通" ShortKey="Ctrl+Shift+X"
+      FunctionAttribute="FormNormal" />
+    <Item Type="MenuItem" Text="最小化" ShortKey="Ctrl+Shift+Y"
+      FunctionAttribute="FormMinimize" />
+    <Item Type="MenuItem" Text="最大化" ShortKey="Ctrl+Shift+Z"
+      FunctionAttribute="FormMaximize" />
+    <Item Type="Seperator" />
+    <Item Type="MenuItem" Text="关闭" ShortKey="Alt+F4"
+      FunctionAttribute="FormClose" />
+  </Menu>
+  <Menu Text="帮助(Help)" ShortKey="Alt+F">
+    <Item Type="MenuItem" Text="关于" FunctionAttribute="FormAbout" />
+  </Menu>
+</MenuStrip>

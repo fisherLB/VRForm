@@ -1,0 +1,121 @@
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:42:54.374] ProjectManagementService.Error 5 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 170
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:44:28.772] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:46:36.586] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type)
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager)
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:47:26.523] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type)
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager)
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:48:27.617] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type)
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager)
+
+===================== Application_Error_Start =====================
+[2018-05-03 17:49:13.102] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type)
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager)
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:09:35.879] ProjectManagementService.Error 10 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 170
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:10:02.166] UserService.Error 5 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:14:32.776] UserService.Error 5 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:14:41.790] ProjectManagementService.Error 11 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 170
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:19:27.794] ProjectManagementService.Error 6 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 170
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:19:40.600] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:20:54.771] ProjectManagementService.Error 5 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 170
+
+===================== Application_Error_Start =====================
+[2018-05-03 18:21:47.497] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125

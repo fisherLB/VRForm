@@ -1,0 +1,66 @@
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:46:54.506] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:47:10.570] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:47:36.373] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:49:06.226] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:50:00.974] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59
+
+===================== Application_Error_Start =====================
+[2018-05-10 09:55:08.741] AdminService.Error 1 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms)
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList)
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList)
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 59

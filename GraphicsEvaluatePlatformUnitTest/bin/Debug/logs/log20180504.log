@@ -1,0 +1,96 @@
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:42:39.889] ClientManagementService.Error 13 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:43:54.625] ClientManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where)
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 37
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:46:08.678] ClientManagementService.Error 11 
+Add 发生异常
+
+===================== Application_Error_End =====================
+System.InvalidOperationException: ConnectionString 属性尚未初始化。
+   在 System.Data.SqlClient.SqlConnection.PermissionDemand()
+   在 System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.PrepareCommand(SqlCommand cmd, SqlConnection conn, SqlTransaction trans, String cmdText, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 330
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.GetSingle(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 427
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 378
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetCount(String tableName, String where) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 177
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.Add(Dictionary`2 dic) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 38
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:51:03.469] ClientManageService.Error 13 
+Message:已添加了具有相同键的项。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:52:31.116] ClientManageService.Error 13 
+Message:已添加了具有相同键的项。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:53:16.546] ClientManageService.Error 11 
+Message:列名 'c_Id' 无效。Inner:
+
+===================== Application_Error_End =====================
+
+===================== Application_Error_Start =====================
+[2018-05-04 16:56:26.162] ClientManageService.Error 13 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'c_unitId' 无效。
+列名 'c_Name' 无效。
+列名 'c_DataTime' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 231
+ClientConnectionId:102032a2-17dd-4566-ae9d-9bef79ddeeef
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-04 17:04:27.039] ClientsManageService.Error 13 
+ActiveClient发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'c_IsEnabled' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.ActiveClients(String ids, String values) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ClientManageService.cs:行号 387
+ClientConnectionId:12f35e92-49bd-4c0d-9017-660e5be7a698
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-04 17:06:08.852] ClientsManageService.Error 11 
+ActiveClient发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'c_IsEnabled' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.Service.ClientManageService.ActiveClients(String ids, String values)
+ClientConnectionId:e82d2a47-5cab-43d1-ad55-0dde9141c9b1
+Error Number:207,State:1,Class:16

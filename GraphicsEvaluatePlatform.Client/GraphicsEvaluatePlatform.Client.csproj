@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B43DAE8-2102-4F3A-9374-50F459627254}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphicsEvaluatePlatform.Client</RootNamespace>
+    <AssemblyName>GraphicsEvaluatePlatform.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\qmj\Desktop\winform\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1D30704C70F77E6D512770E61F3EE3F63F4F228F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GraphicsEvaluatePlatform.Client_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Prism, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http">
+      <HintPath>libs\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Basics\BaseService.cs" />
+    <Compile Include="Common\Folder.cs" />
+    <Compile Include="Common\Gray.cs" />
+    <Compile Include="Common\ModelToDictionary.cs" />
+    <Compile Include="Common\PasswordBoxBindingHelper.cs" />
+    <Compile Include="Common\SkewAngle.cs" />
+    <Compile Include="Common\SynchronousData.cs" />
+    <Compile Include="Models\ClientDataModel.cs" />
+    <Compile Include="Models\Detection.cs" />
+    <Compile Include="Models\DetectionSetting.cs" />
+    <Compile Include="Models\PageData.cs" />
+    <Compile Include="Models\Picture.cs" />
+    <Compile Include="Models\Process.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Qualified.cs" />
+    <Compile Include="Models\Report.cs" />
+    <Compile Include="Models\UnQualified.cs" />
+    <Compile Include="Models\UserGroupModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Repository\IDetectionService.cs" />
+    <Compile Include="Repository\IDetectionSettingService.cs" />
+    <Compile Include="Repository\ILoginService.cs" />
+    <Compile Include="Repository\IMainWindowService.cs" />
+    <Compile Include="Repository\IPictureService.cs" />
+    <Compile Include="Repository\IProcessService.cs" />
+    <Compile Include="Repository\IProjectService.cs" />
+    <Compile Include="Repository\IQualifiedService.cs" />
+    <Compile Include="Repository\IReportService.cs" />
+    <Compile Include="Repository\IUnQualifiedService.cs" />
+    <Compile Include="Repository\IUserService.cs" />
+    <Compile Include="Services\DetectionService.cs" />
+    <Compile Include="Services\DetectionSettingService.cs" />
+    <Compile Include="Services\LoginService.cs" />
+    <Compile Include="Services\OperationLogService.cs" />
+    <Compile Include="Services\PictureService.cs" />
+    <Compile Include="Services\ProcessService.cs" />
+    <Compile Include="Services\ProjectService.cs" />
+    <Compile Include="Services\QualifiedService.cs" />
+    <Compile Include="Services\ReportService.cs" />
+    <Compile Include="Services\UnQualifiedService.cs" />
+    <Compile Include="Services\UserlogService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="ViewModels\AddUserViewModel.cs" />
+    <Compile Include="ViewModels\DbConfigViewModel.cs" />
+    <Compile Include="ViewModels\DetectionSettingViewModel.cs" />
+    <Compile Include="ViewModels\DetectionViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\PagerViewModel.cs" />
+    <Compile Include="ViewModels\PictureViewModel.cs" />
+    <Compile Include="ViewModels\ProcessViewModel.cs" />
+    <Compile Include="ViewModels\ProjectViewModel.cs" />
+    <Compile Include="ViewModels\QualifiedViewModel.cs" />
+    <Compile Include="ViewModels\ReportViewModel.cs" />
+    <Compile Include="ViewModels\UnQualifiedViewModel.cs" />
+    <Compile Include="ViewModels\UserItemViewModel.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="Views\DetectionReport\QualifiedReport.xaml.cs">
+      <DependentUpon>QualifiedReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetectionReport\UnqualifiedReport.xaml.cs">
+      <DependentUpon>UnqualifiedReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImportData\ImportDataWindow.xaml.cs">
+      <DependentUpon>ImportDataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClientLogin.xaml.cs">
+      <DependentUpon>ClientLogin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PagerControl.xaml.cs">
+      <DependentUpon>PagerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PictrueSampling\SamplingPage.xaml.cs">
+      <DependentUpon>SamplingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PictrueSampling\SamplingWin.xaml.cs">
+      <DependentUpon>SamplingWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PictrueSampling\TestPreviewWin.xaml.cs">
+      <DependentUpon>TestPreviewWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectWindow\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SetdbconfigFrom.xaml.cs">
+      <DependentUpon>SetdbconfigFrom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartUp\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCTabItemWithClose.xaml.cs">
+      <DependentUpon>UCTabItemWithClose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserWin\addUserWin.xaml.cs">
+      <DependentUpon>addUserWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserWin\updataUserWin.xaml.cs">
+      <DependentUpon>updataUserWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserWin\userManage.xaml.cs">
+      <DependentUpon>userManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfDetection\BatchDetectionPic.xaml.cs">
+      <DependentUpon>BatchDetectionPic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfDetection\Detection.xaml.cs">
+      <DependentUpon>Detection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfPicture\PictureManage.xaml.cs">
+      <DependentUpon>PictureManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfProcess\BatchProcess.xaml.cs">
+      <DependentUpon>BatchProcess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfProcess\ProcessManage.xaml.cs">
+      <DependentUpon>ProcessManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfProcess\SinglePictureProcess.xaml.cs">
+      <DependentUpon>SinglePictureProcess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wpfProject\ProjectManage.xaml.cs">
+      <DependentUpon>ProjectManage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\DetectionReport\QualifiedReport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DetectionReport\UnqualifiedReport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ImportData\ImportDataWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LoadingWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ClientLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PagerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PictrueSampling\SamplingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PictrueSampling\SamplingWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PictrueSampling\TestPreviewWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ProjectWindow\UserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SetdbconfigFrom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StartUp\StartPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UCTabItemWithClose.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserWin\addUserWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserWin\updataUserWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserWin\userManage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\wpfDetection\BatchDetectionPic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\wpfDetection\Detection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\wpfPicture\PictureManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\wpfProcess\BatchProcess.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\wpfProcess\ProcessManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\wpfProcess\SinglePictureProcess.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\wpfProject\ProjectManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="GraphicsEvaluatePlatform.Client_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow.png" />
+    <Resource Include="Images\d_bg01.png" />
+    <Resource Include="Images\d_bg04.png" />
+    <Resource Include="Images\d_bg05.png" />
+    <Resource Include="Images\d_bg06.png" />
+    <Resource Include="Images\line.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\previous.png" />
+    <Resource Include="Images\reset.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\max.png" />
+    <Resource Include="Images\menu_bg01.png" />
+    <Resource Include="Images\menu_bg02.png" />
+    <Resource Include="Images\menu_bg03.png" />
+    <Content Include="libs\System.Net.Http.dll" />
+    <Resource Include="Xml\VersionXml.xml" />
+    <Resource Include="libs\System.Net.Http.xml" />
+    <Resource Include="Images\btn_bg01.png" />
+    <Resource Include="Images\btn_del.png" />
+    <Resource Include="Images\btn_edit.png" />
+    <Resource Include="Images\btn_new.png" />
+    <Resource Include="Images\btn_Print.png" />
+    <Resource Include="Images\cancel.png" />
+    <Resource Include="Images\cancel02.png" />
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\confirm.png" />
+    <Resource Include="Images\datapacket.png" />
+    <Resource Include="Images\DfIcon.ico" />
+    <Resource Include="Images\d_bg02.png" />
+    <Resource Include="Images\d_bg03.png" />
+    <Resource Include="Images\handle.png" />
+    <Resource Include="Images\icon_p.png" />
+    <Resource Include="Images\inspect.png" />
+    <Resource Include="Images\in_data.png" />
+    <Resource Include="Images\login.png" />
+    <Resource Include="Images\login_bg.png" />
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\menu_bg.png" />
+    <Resource Include="Images\min.png" />
+    <Resource Include="Images\Reportform.png" />
+    <Resource Include="Images\Set.png" />
+    <Resource Include="Images\start.png" />
+    <Resource Include="Images\stop.ico" />
+    <Resource Include="Images\synchro.png" />
+    <Resource Include="Images\SysReqMet.ico" />
+    <Resource Include="Images\uof.ico" />
+    <Resource Include="Images\warn.ico" />
+    <Resource Include="Images\welcom.jpg" />
+    <Resource Include="Images\xamarininspector.ico" />
+    <Resource Include="Images\xamarinprofiler.ico" />
+    <Content Include="libs\Microsoft.Practices.Prism.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphicsEvaluatePlatform.Infrastructure\GraphicsEvaluatePlatform.Infrastructure.csproj">
+      <Project>{4d68f763-2c1c-4f22-902e-e36e4f8c31b4}</Project>
+      <Name>GraphicsEvaluatePlatform.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GraphicsEvaluatePlatform.Repository\GraphicsEvaluatePlatform.Repository.csproj">
+      <Project>{CF4EA588-232F-46BC-8DA6-E4DE496AFC2F}</Project>
+      <Name>GraphicsEvaluatePlatform.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+
+===================== Application_Error_Start =====================
+[2020-12-17 22:57:29.420] UserService.Error 1 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 'Users' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 318
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.RegBll.RegUser(String UserName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\RegBll .cs:行号 68
+ClientConnectionId:18c4f0d2-6784-4d9a-98db-9de9af4fcac7
+Error Number:208,State:1,Class:16

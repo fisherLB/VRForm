@@ -1,0 +1,135 @@
+
+===================== Application_Error_Start =====================
+[2018-05-04 08:59:43.828] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:04:03.825] UserService.Error 10 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:26:42.984] UserService.Error 10 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:27:31.331] UserService.Error 11 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:27:56.749] UserService.Error 10 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:28:09.887] UserService.Error 13 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:29:07.227] UserService.Error 15 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:30:06.774] UserService.Error 12 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:43:29.876] UserService.Error 5 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 09:43:44.970] UserService.Error 10 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 10:08:51.280] UserService.Error 8 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 10:09:02.150] UserService.Error 5 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 10:10:42.922] UserService.Error 11 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 11:10:23.232] UserService.Error 5 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125
+
+===================== Application_Error_Start =====================
+[2018-05-04 11:10:34.454] UserService.Error 6 
+GetUserList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ServiceBase.GetInfo(String type) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ServiceBase.cs:行号 68
+   在 GraphicsEvaluatePlatform.Service.UserService.GetUserList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UserService.cs:行号 125

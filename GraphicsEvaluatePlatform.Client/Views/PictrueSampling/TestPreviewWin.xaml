@@ -1,0 +1,74 @@
+﻿<Window x:Class="GraphicsEvaluatePlatform.Client.Views.PictrueSampling.TestPreviewWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicsEvaluatePlatform.Client.Views.PictrueSampling"
+        mc:Ignorable="d"
+        Title="TestPreviewWin" Height="678" Width="1200" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Background="#FF003460">
+        <Rectangle Fill="WhiteSmoke" HorizontalAlignment="Left" Margin="8,51.833,0,11.667" Width="151"/>
+        <Rectangle Fill="WhiteSmoke" Margin="170,52.333,10,11.667"/>
+        <TextBlock x:Name="textBlock3" Height="21" Margin="595.5,0,545.5,20" TextWrapping="Wrap" Text="上一页" VerticalAlignment="Bottom" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Right" Height="21" Margin="0,0,486.5,20" TextWrapping="Wrap" Text="下一页" VerticalAlignment="Bottom" Width="52" FontSize="14" FontWeight="Bold"/>
+        <Image x:Name="Images_next_png" HorizontalAlignment="Right" Height="18" Margin="0,0,478,22" Source="/Images/next.png" Stretch="Fill" VerticalAlignment="Bottom" Width="12" UseLayoutRounding="True"/>
+        <Image x:Name="Images_previous_png" Height="18" Margin="578,0,0,22" Source="/Images/previous.png" Stretch="Fill" VerticalAlignment="Bottom" UseLayoutRounding="True" HorizontalAlignment="Left" Width="12"/>
+        <Rectangle Fill="#FFD6D6D6" Margin="462.853,65.523,357.353,50.996" Stroke="Black" StrokeThickness="0"/>
+        <Rectangle Fill="#FF00578E" Height="40" Margin="8,9,10,0" VerticalAlignment="Top" Stroke="#FF0076B9"/>
+        <Rectangle Fill="#FFD6D6D6" Margin="22.028,82.523,0,0" Stroke="Black" StrokeThickness="0" HorizontalAlignment="Left" Width="120.727" Height="178.481" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFD6D6D6" Margin="22.028,268.523,0,230.996" Stroke="Black" StrokeThickness="0" HorizontalAlignment="Left" Width="120.727"/>
+        <Rectangle Fill="#FFD6D6D6" Margin="22.028,0,0,42.996" Stroke="Black" StrokeThickness="0" HorizontalAlignment="Left" Width="120.727" Height="178.481" VerticalAlignment="Bottom"/>
+        <Button x:Name="close" Content="关闭" HorizontalAlignment="Right" Margin="0,22,16,0" Width="12" Height="12"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Top" UseLayoutRounding="True" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/close.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+        <Button x:Name="close_Copy" Content="关闭" HorizontalAlignment="Right" Margin="0,22,66,0" Width="12" Height="12"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Top" UseLayoutRounding="True" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/min.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+        <TextBlock x:Name="textBlock" Margin="24,21,0,0" TextWrapping="Wrap" Text="图像预览" Foreground="White" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="close_Copy1" Content="关闭" HorizontalAlignment="Right" Margin="0,22,39,0" Width="16" Height="12"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Top" UseLayoutRounding="True" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/max.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+        <Image x:Name="Images_Arrow_png" HorizontalAlignment="Left" Height="24" Margin="74.5,59.333,0,0" Source="/Images/Arrow.png" Stretch="Fill" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Images_Arrow_png_Copy" HorizontalAlignment="Left" Height="24" Margin="69,0,0,15" Source="/Images/Arrow.png" Stretch="Fill" VerticalAlignment="Bottom" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>

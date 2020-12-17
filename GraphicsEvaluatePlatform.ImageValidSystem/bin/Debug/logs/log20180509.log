@@ -1,0 +1,13 @@
+
+===================== Application_Error_Start =====================
+[2018-05-09 16:46:30.171] ProjectManagementService.Error 1 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 无法绑定由多个部分组成的标识符 "ret.rownumber"。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 300
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.BllProjectsManage.GetList(String unitId)
+ClientConnectionId:e90d78fe-a796-4fbc-8eae-6868d9666948
+Error Number:4104,State:1,Class:16

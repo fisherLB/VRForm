@@ -1,0 +1,151 @@
+﻿@using GraphicsEvaluatePlatform.Service;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>登录页</title>
+    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/Content/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap-tab.css">
+    <link rel="stylesheet" href="~/Content/bootstrap/css/tree.css" />
+    <link rel="stylesheet" href="~/Content/css/login.css" />
+    <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="~/Scripts/layer/layer.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-treeview.js" type="text/javascript"></script>
+</head>
+<body class="login_body">
+    <div class="loginLigo"><img src="~/Images/ttlogo_03.png"/></div>
+    <div class="loginMain">
+        <div class="loginInput">
+            <div><label>用户名：</label><input placeholder="请输入用户名" id="txtLoginName" class="loginTxt username" type="text"></div>
+            <div><label>密码：</label><input placeholder="请输入密码" id="txtPassword" class="loginTxt psw" type="password"></div>
+            <div class="validateWrap"><label>验证码：</label>
+            <input placeholder="请输入验证码" id="txtValidCode" class="loginTxt validate" type="text">
+                <img src="/Admin/GetCodeImage?ID=1" id="imgCode" alt="单击可刷新" onclick="ClickRemoveChangeCode()" style="width:100px;height:34px;" />
+            </div>
+        </div>
+        <input type="button" value="登录" class="loginBtn login" id="btnLogin" onclick="UserLogin();">
+    </div>
+    <p class="loginFoot">版权所有©南宁泰坦软件有限公司</p>
+
+    <script type="text/javascript">
+        $(function () {
+
+            $('#txtLoginName').bind('keydown', function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    UserLogin();
+                }
+            });
+            $('#txtPassword').bind('keydown', function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    UserLogin();
+                }
+            });
+            $('#txtValidCode').bind('keydown', function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    UserLogin();
+                }
+            });
+            $("#txtLoginName").focus();
+        });
+
+        function UserLogin() {
+
+            if ($.trim($('#txtLoginName').val()) === '') {
+                layer.alert('请输入用户名称！', {
+                    title: '提示',
+                    icon:0,
+                    yes: function (index) {
+                        $("#txtLoginName").focus();
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+
+            if ($.trim($('#txtPassword').val()) === '') {
+                layer.alert('请输入密码！', {
+                    title: '提示',
+                    icon: 0,
+                    yes: function (index) {
+                        $("#txtPassword").focus();
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+
+            if ($.trim($('#txtValidCode').val()) === '') {
+                layer.alert( '请输入验证码！',{
+                    title: '提示',
+                    icon: 0,
+                    yes: function (index) {
+                        $("#txtValidCode").focus();
+                        layer.close(index);
+                    }
+                });
+                
+                return;
+            }
+
+            var obj = new Object();
+            obj.LoginName = $('#txtLoginName').val();
+            obj.Password = $('#txtPassword').val();
+            obj.ValidateCode = $('#txtValidCode').val();
+            var loadIndex = layer.load(1, {
+                shade: [0.2, '#fff'] //0.1透明度的白色背景
+            });
+
+            $.post('/Admin/UserLogin', obj, function (resp) {
+                var resp = eval('(' + resp + ')');
+                if (resp.Success) {
+                    layer.close(loadIndex);
+                    window.location.href = resp.Address;
+                } else {
+                    layer.alert(resp.Message, {
+                        title: '提示',
+                        icon: 2,
+                        yes: function (index) {
+                            layer.close(loadIndex);
+                            layer.close(index);
+                            ClickRemoveChangeCode();
+                            //InputReset();
+                        }
+                    });
+                    return;
+                }
+            });
+        }
+
+        function InputReset() {
+            $('#txtLoginName').val('');
+            $('#txtPassword').val('');
+            $('#txtValidCode').val('');
+            $('#txtLoginName').focus();
+        }
+
+        //单击重新改变验证码
+        function ClickRemoveChangeCode() {
+            var code = $("#imgCode").attr("src");
+            $("#imgCode").attr("src", code + "1");
+        }
+
+    </script>
+</body>
+</html>

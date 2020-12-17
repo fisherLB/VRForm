@@ -1,0 +1,74 @@
+
+===================== Application_Error_Start =====================
+[2018-05-07 09:36:46.101] ProjectManagementService.Error 5 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(order by p_DataTime desc) rownumber , pro.*,ut.u_Name from t_projects pro left ' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 256
+   在 GraphicsEvaluatePlatform.Repository.DataBll.Query(String sql) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 132
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 318
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:00:15.844] AdminService.Error 5 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='admin'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.Service.AdminService.UserLogin(LoginModel model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\AdminService.cs:行号 69
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:06:57.213] AdminService.Error 16 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='test2233'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.Service.AdminService.UserLogin(LoginModel model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\AdminService.cs:行号 69
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:07:23.907] AdminService.Error 16 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='test2233'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.Service.AdminService.UserLogin(LoginModel model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\AdminService.cs:行号 69
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:07:42.875] AdminService.Error 16 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='test2233'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.Service.AdminService.UserLogin(LoginModel model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\AdminService.cs:行号 69
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:09:26.835] AdminService.Error 16 
+UserLogin 发生异常
+
+===================== Application_Error_End =====================
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'with(nolock) where Us_account='test2233'' at line 1
+   在 GraphicsEvaluatePlatform.Repository.MySqlDBHelper.Query(String SQLString, MySqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDBHelper.cs:行号 319
+   在 GraphicsEvaluatePlatform.Repository.MySqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\MySqlDataBase.cs:行号 274
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.Service.AdminService.UserLogin(LoginModel model) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\AdminService.cs:行号 69
+
+===================== Application_Error_Start =====================
+[2018-05-07 16:44:25.564] UnitManageService.Error 10 
+GetUnitList 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.UnitManageService.GetUnitList() 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\UnitManageService.cs:行号 34

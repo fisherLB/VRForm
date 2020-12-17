@@ -1,0 +1,73 @@
+
+===================== Application_Error_Start =====================
+[2020-12-15 21:51:30.268] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 GraphicsEvaluatePlatform.ImageValidSystem.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.ImageValidSystem\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2020-12-15 22:33:30.850] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2020-12-15 22:33:55.752] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2020-12-15 22:35:01.215] LoginBll.Error 1 
+LoginValidate 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.LoginBll.LoginValidate(String LoginName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\LoginBll.cs:行号 66
+
+===================== Application_Error_Start =====================
+[2020-12-15 23:12:42.244] UserService.Error 1 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 't_users' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 318
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.RegBll.RegUser(String UserName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\RegBll .cs:行号 79
+ClientConnectionId:e4b1fc11-07bc-4c28-b3e9-ec585953277d
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2020-12-15 23:13:34.786] UserService.Error 1 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 对象名 't_users' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 318
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetModel(String cols, String tableName, Dictionary`2 whereList) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 146
+   在 VRForm.Lib.RegBll.RegUser(String UserName, String Password)
+ClientConnectionId:e4b1fc11-07bc-4c28-b3e9-ec585953277d
+Error Number:208,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2020-12-15 23:15:40.722] UserService.Error 1 
+AddUser 发生异常
+
+===================== Application_Error_End =====================
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 VRForm.Lib.RegBll.RegUser(String UserName, String Password) 位置 D:\CodeFolder\图像测评系统0526\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\VRForm\Lib\RegBll .cs:行号 87

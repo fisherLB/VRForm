@@ -1,0 +1,795 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>检测设置</title>
+    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap-table.css" />
+    <link rel="stylesheet" href="~/Content/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap-tab.css">
+    <link rel="stylesheet" href="~/Content/bootstrap/css/tree.css" />
+    <link href="~/Content/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-table.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-table-zh-CN.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.3.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/layer/layer.js" type="text/javascript"></script>
+    <script src="~/Scripts/public.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap/bootstrap-treeview.js" type="text/javascript"></script>
+    <style>
+        #keyword::-webkit-input-placeholder {
+            color: #afe3ff;
+        }
+    </style>
+</head>
+<body class="content-body">
+    <div class="main_content">
+        <div class="main_head">
+            <div class="container_title">检测设置</div>
+            <div class="container_btn" id="btnGroup">
+                @*<button class="button button_blue" onclick="OnclickAdd()">新增
+                    </button><button class="button button_blue" onclick="OnclickEdit()">修改
+                    </button><button class="button button_orange" onclick="DeleteSettings()">删除
+                    </button><button class="button button_blue">详情
+                    </button><input class="title_search" id="keyword"/><button class="button button_blue" onclick="search()">搜索</button>
+                    <div class="head-icon-right01"><img class="logo-img" src="~/Images/pic02.png" /></div>*@
+            </div>
+        </div>
+        <div class="main_force">
+            <div class="main_table_box">
+                <div class="main_center_icon01"><img src="~/Images/pic03.png" /></div>
+                <div class="main_center_icon02"><img src="~/Images/pic04.png" /></div>
+                <div class="scroll_patch"></div>
+                <div class="main_table_left">
+                    <div class="left_tree" id="project_tree"></div>
+                </div>
+                <div class="main_table_center">
+                    <div class="main_table_con">
+                        <table class="table" id="setting_table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* 新建弹窗 开始 *@
+    <script id="settingAddWin" type="text/html">
+        <div class="win_box02">
+            <div class="win_box02_1">
+                <div class="win_box02_2">
+                    <form>
+                        <div class="win_input_box">
+                            <div class="win_input_left_s">
+                                <p>选择机构：</p>
+                                <input type="text" class="win_input02 win_select_left" id="UnitName" value="" style="width:248px;" readonly />
+                                <input type="hidden" id="UnitId" />
+                                <div id="unitTree" style="display: none; min-width:248px;" class="tree3"></div>
+                            </div>
+                            <div class="win_input_left">
+                                <span>选择项目：</span>
+                                @*<select class="win_select win_select_left" style="width:248px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>*@
+                                <select type="text" class="title_search_up" id="SelectionProject" name="SelectionProject" style="width:200px; vertical-align: middle;"></select>
+                            </div>
+                        </div>
+                        <div class="win_input_box">
+                            <div class="win_input_left">
+                                <span>合格存放地址：</span><input class="win_input" style="width:248px;" id="QualifiedPath" />
+                            </div>
+                            <div class="win_input_left">
+                                <span>不合格存放地址：</span><input class="win_input" style="width:248px;" id="UnqualifiedPath" />
+                            </div>
+                        </div>
+                        <div class="win_input_box">
+                            <div class="win_input_left">
+                                <span>设置模板名称：</span><input class="win_input" style="width:248px;" id="Name" />
+                            </div>
+                        </div>
+                        <div class="win_hr"></div>
+                        <div class="win_input_box">
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_FileNamingRules" />文件命名规则：</span><input class="win_input" style="width:248px;" id="NameRule" />
+                            </div>
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_PictureFormat" />图片格式：</span>
+                                <select class="win_select win_select_left" style="width:248px;" id="PictureType">
+                                    <option value="1">JPEG</option>
+                                    <option value="2">GIFF</option>
+                                    <option value="3">BMP</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="win_input_box">
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_ImageSizeRange" />图像大小范围：</span><input class="win_input" style="width:117px;" id="SizeMin" /><i>~</i><input class="win_input" style="width:117px;" id="SizeMax" />
+                            </div>
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_CorrectionRange" />纠偏范围：</span><input class="win_input" style="width:117px;" id="RectifyMin" /><i>~</i><input class="win_input" style="width:117px;" id="RectifyMax" />
+                            </div>
+                        </div>
+                        <div class="win_input_box">
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_ResolutionRange" />分辨率范围：</span><input class="win_input" style="width:117px;" id="ResolutionMin" /><i>~</i><input class="win_input" style="width:117px;" id="ResolutionMax" />
+                            </div>
+                            @*<div class="win_input_left">
+                                        <span><input type="checkbox" id="Is_LuminanceRange"/>亮度范围：</span><input class="win_input" style="width:117px;" id="BrightMin"/><i>~</i><input class="win_input" style="width:117px;" id="BrightMax"/>
+                                    </div>
+                                </div>
+                                <div class="win_input_box">
+                                    <div class="win_input_left">
+                                        <span><input type="checkbox" id="Is_DefinitionRange"/>图片清晰度：</span><input class="win_input" style="width:117px;" id="ClarityMin"/><i>~</i><input class="win_input" style="width:117px;" id="ClarityMax"/>
+                                    </div>*@
+                            <div class="win_input_left">
+                                <span><input type="checkbox" id="Is_AddingWatermark" />添加水印：</span><input type="checkbox" id="ImplicitWatermarks" /><label>显性水印</label><input type="checkbox" id="DisplayWatermarks" /><label>隐形水印</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </script>
+    @* 新建弹窗 结束 *@
+
+    <script type="text/javascript">
+
+        var unitID = '-1';//当前登录机构id
+
+        $(function () {
+            loadControl();//加载按钮
+            getUnit();//获取左侧机构树
+            getDetectionSettingList();//获取检测设置列表          
+            $(window).resize(function () {
+                $('#setting_table').bootstrapTable('resetView', {
+                    height: $(window).height() - 74.5
+                });
+            });
+        });
+
+        /*********************************获取左侧机构树 start *********************************/
+        function getUnit() {
+            $.ajax({
+                type: "get",
+                url: '/api/UnitManage/GetUnitCombotree',
+                dataType: "json",
+                success: function (result) {
+                    $('#project_tree').treeview({
+                        data: JSON.parse(result),         // 数据源
+                        highlightSelected: true,    //是否高亮选中
+                        multiSelect: false,    //多选
+                        nodeSelected: function (event, node) {
+
+                        },
+                        onNodeExpanded: function (event, data) { },
+                        onNodeSelected: function (event, data) { }
+                    });
+                    $('#project_tree').on('nodeSelected', function (event, data) {
+                        unitID = data.id;
+                        getDetectionSettingList();
+                    });
+                },
+                error: function () {
+                    layer.alert('加载失败！', {
+                        title: '提示',
+                        icon: 2,
+                        yes: function (index) {
+                            layer.close(index);
+                        }
+                    });
+                }
+            });
+        }
+        /*********************************获取左侧机构树 stop *********************************/
+        
+        /*********************************获取机构树下拉选择框 start **************************/
+        function getUnitTree2(parentID, id, value, fun) {
+            $.ajax({
+                type: "get",
+                url: '/api/UnitManage/GetUnitCombotree2',
+                dataType: "json",
+                success: function (result) {
+                    if (result != "") {
+                        $('#' + id).treeview({
+                            data: JSON.parse(result),         // 数据源
+                            highlightSelected: true,    //是否高亮选中
+                            multiSelect: false,    //多选
+                            levels: 10,
+                            onhoverColor: '#a1c8ea',
+                            expandIcon: 'tree_icon_open',
+                            collapseIcon: 'tree_icon_close',
+                            nodeSelected: function (event, node) {
+
+                            },
+                            onNodeExpanded: function (event, data) { },
+                            onNodeSelected: function (event, data) { }
+                        });
+                        $('#' + id).on('nodeSelected', function (event, data) {
+                            $('#' + parentID).val(data.text);
+                            $('#' + value).val(data.id);
+                            $('#' + id).hide();
+                            if (fun) {
+                                fun();
+                            }
+                        });
+                        $('#' + id).on('nodeUnselected', function (event, data) {
+                            $('#' + parentID).val(data.text);
+                            $('#' + value).val(data.id);
+                            $('#' + id).hide();
+                        });
+                    }
+                }
+            });
+            $('#' + parentID).click(function () {
+                $('#' + id).toggle();
+            });
+            if (!fun) {
+                $(document).click(function (event) {
+                    var _con = $('#' + id);
+                    if ($(event.target).attr('class').indexOf('expand-icon') != -1) {
+                        return;
+                    }
+                    if (!_con.is(event.target) && _con.has(event.target).length === 0 && event.target.id != parentID) {
+                        $('#unitTree').hide();
+                    }
+                });
+            }
+        }
+        /*********************************获取机构树下拉选择框 stop **********************/
+
+        /************************获取项目名称下拉框  start********************************/
+        function getProgectOfUnit() {
+            var unitID = getValueAndValidate('UnitId');//用户选择的单位id
+            var data = { unitId: unitID };
+            $.ajax({
+                url: "/api/ProjectManagement/getProgectOfUnit",
+                type: 'post',
+                async: false,
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    var html = '';
+                    data = JSON.parse(data);
+                    html += "<option value = ''> - - 请选择项目 - - </option>";
+                    for (var i = 0; i < data.rows.length; i++) {
+                        html += "<option value=" + data.rows[i].p_Id + ">"
+                        + data.rows[i].p_Name + "</option>";
+                    }
+                    $("#SelectionProject").html(html);
+
+                }
+            });
+            $("#SelectionProject").change(function () {
+                projectId = $("#SelectionProject").val();
+                ProjectName = $('#SelectionProject').find("option:selected").text();
+            });
+        };
+        /************************获取项目名称下拉框  stop********************************/
+
+        /*********************************获取检测设置列表 start *************************/
+        function getDetectionSettingList() {
+            $('#setting_table').bootstrapTable('destroy');
+            $('#setting_table').bootstrapTable({
+                url: '/api/DetectionSetting/GetDetectionSettingsList',
+                contentType: 'application/x-www-form-urlencoded',
+                queryParamsType: "undefined",
+                method: 'get',
+                queryParams: function queryParams(params) {   //设置查询参数
+                    var keyWord = $.trim($('#keyword').val());
+                    var param = {
+                        filter: keyWord + ",UID:" + unitID,
+                        PageSize: params.pageSize,
+                        PageIndex: params.pageNumber
+                    };
+                    return param;
+                },
+                checkboxHeader: true,
+                pagination: true,
+                pageNumber: 1,
+                pageSize: 10,
+                striped: true,
+                onlyInfoPagination: false,
+                sidePagination: "server", //表示服务端分页
+                pageList: [10, 20, 30, 50, 100],
+                height: $('.main_table_con').height() - 1,
+                paginationLoop: false,
+                clickToSelect: true,
+                paginationpretext: '上一页',
+                paginationnexttext: '下一页',
+                columns: [
+                    { checkbox: true, halign: 'center', align: 'center', width: '3%' },
+                    { field: 'Id', visible: false },
+                    {
+                        field: 'UnitName', title: '单位名称', halign: 'left', align: 'left', width: '25%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'ProjectName', title: '项目名称', halign: 'left', align: 'left', width: '20%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'Name', title: '模板名称', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'NameRule', title: '命名规则', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'SizeMin', title: '图片大小最小值', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'SizeMax', title: '图片大小最大值', halign: 'left', align: 'left', width: '22%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'ResolutionMin', title: '分辨率最小值', halign: 'left', align: 'left', width: '25%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'ResolutionMax', title: '分辨率最大值', halign: 'left', align: 'left', width: '20%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    //{
+                    //    field: 'BrightMin', title: '亮度最小值', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    //{
+                    //    field: 'BrightMax', title: '亮度最大值', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    {
+                        field: 'RectifyMin', title: '纠偏最小值', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'RectifyMax', title: '纠偏最大值', halign: 'left', align: 'left', width: '22%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    //{
+                    //    field: 'ImplicitWatermarks', title: '隐式水印', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    //{
+                    //    field: 'DisplayWatermarks', title: '显示水印', halign: 'left', align: 'left', width: '22%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    {
+                        field: 'PictureType', title: '图片格式', halign: 'left', align: 'left', width: '25%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    //{
+                    //    field: 'ClarityMin', title: '清晰度最小值', halign: 'left', align: 'left', width: '20%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    //{
+                    //    field: 'ClarityMax', title: '清晰度最大值', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                    {
+                        field: 'QualifiedPath', title: '合格存放地址', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    {
+                        field: 'UnqualifiedPath', title: '不合格存放地址', halign: 'left', align: 'left', width: '10%', formatter: function (value, row, index) {
+                            return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                        }
+                    },
+                    //{
+                    //    field: 'remarks', title: '备注', halign: 'left', align: 'left', width: '22%', formatter: function (value, row, index) {
+                    //        return "<span class=\"hxm\" title=\"" + value + "\">" + value + "</span>";
+                    //    }
+                    //},
+                ],
+                responseHandler: function (res) {
+                    res = JSON.parse(res);
+                    return {
+                        "total": res.total,
+                        "rows": res.rows
+                    };
+                },
+                onLoadSuccess: function (data) {
+
+                }
+            });
+        }
+        /*********************************获取检测设置列表 stop *********************************/
+     
+        /*********************************新增修改功能 start ************************************/
+        //点击新增按钮
+        function OnclickAdd() {
+            var unit = $('#project_tree').treeview('getSelected');
+            if (unit.length == 0) {
+                layer.alert('请选择机构！', {
+                    icon: 0,
+                    yes: function (index) {
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+            layer.open({
+                title: '新增检测设置',
+                type: 1,
+                area: ['900px', '420px'],
+                btn: ['确定', '取消'],
+                btnAlign: 'c',
+                content: $('#settingAddWin').html(),
+                yes: function (index, layero) {
+                    AddSave(index, "Add");
+                },
+                cancel: function (index) {
+                    layer.close(index);
+                }
+            });
+            getUnitTree2('UnitName', 'unitTree', 'UnitId', getProgectOfUnit);//加载机构树下拉选择框
+            $('#UnitName').val(unit[0].text);
+            $('#UnitId').val(unit[0].id);
+        }
+
+        //点击修改按钮
+        function OnclickEdit() {
+            var row = $('#setting_table').bootstrapTable('getSelections');
+            if (!row || row == null || row.length == 0) {
+                layer.alert('请选择要修改的行！', {
+                    title: '提示',
+                    icon: 0,
+                    yes: function (index) {
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+            if (row.length > 1) {
+                layer.alert('每次只能选择一行修改！', {
+                    title: '提示',
+                    icon: 0,
+                    yes: function (index) {
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+
+            layer.open({
+                title: '修改检测设置',
+                type: 1,
+                area: ['900px', '420px'],
+                btn: ['确定', '取消'],
+                btnAlign: 'c',
+                content: $('#settingAddWin').html(),
+                yes: function (index, layero) {
+                    AddSave(index, "edit");
+                },
+                cancel: function (index) {
+                    layer.close(index);
+                }
+            });
+
+            $('#Id').val(row[0].Id);//条目id
+            $('#UnitId').val(row[0].UnitId);//单位id
+            $('#UnitName').val(row[0].UnitName);//单位名称
+            $('#ProjectID').val(row[0].ProjectID);//项目id
+            $('#ProjectName').val(row[0].ProjectName);//项目名称
+            $('#QualifiedPath').val(row[0].QualifiedPath);//合格存放地址
+            $('#UnqualifiedPath').val(row[0].UnqualifiedPath);//不合格存放地址
+            $('#Name').val(row[0].Name);//模板名称
+
+            if (row[0].Is_FileNamingRules) {                  //是否设置文件命名规则
+                $("#Is_FileNamingRules").attr("checked", 'checked');
+            }
+            $('#NameRule').val(row[0].NameRule);//文件命名规则
+
+            if (row[0].Is_PictureFormat) {                   //是否设置图片格式
+                $("#Is_PictureFormat").attr("checked", 'checked');
+            }
+            $('#PictureType').val(row[0].PictureType);//图片格式
+
+            if (row[0].Is_ImageSizeRange) {                  //是否设置图像大小范围
+                $("#Is_ImageSizeRange").attr("checked", 'checked');
+            }
+            $('#SizeMin').val(row[0].SizeMin);//图像最小值
+            $('#SizeMax').val(row[0].SizeMax);//图像最大值
+
+            if (row[0].Is_CorrectionRange) {                  //是否设置纠偏范围
+                $("#Is_CorrectionRange").attr("checked", 'checked');
+            }
+            $('#RectifyMin').val(row[0].RectifyMin);//纠偏最小值
+            $('#RectifyMax').val(row[0].RectifyMax);//纠偏最大值
+
+            if (row[0].Is_ResolutionRange) {                  //是否设置分辨率范围
+                $("#Is_ResolutionRange").attr("checked", 'checked');
+            }
+            $('#ResolutionMin').val(row[0].RectifyMin);//分辨率最小值
+            $('#ResolutionMax').val(row[0].RectifyMax);//分辨率最大值
+
+
+            if (row[0].Is_AddingWatermark) {                  //是否添加水印
+                $("#Is_AddingWatermark").attr("checked", 'checked');
+            }
+            if (row[0].ImplicitWatermarks) {                  //隐式水印
+                $("#ImplicitWatermarks").attr("checked", 'checked');
+            }
+            if (row[0].DisplayWatermarks) {                  //显示水印
+                $("#DisplayWatermarks").attr("checked", 'checked');
+            }
+            //$('#Is_LuminanceRange').checked = row[0].Is_LuminanceRange;//是否设置亮度范围
+            //$('#BrightMin').val(row[0].RectifyMin);//亮度最小值
+            //$('#BrightMax').val(row[0].RectifyMax);//亮度最大值
+            //$('#Is_DefinitionRange').checked = row[0].Is_DefinitionRange;//是否设置图片清晰度
+            //$('#ClarityMin').val(row[0].ClarityMin);//图片清晰度最小值
+            //$('#ClarityMax').val(row[0].ClarityMax);//图片清晰度最大值
+        }
+
+        //保存按钮
+        var childIds = "";
+        function AddSave(farIndex, type) {
+            //if (type != 'edit') {
+            var UnitId = getValueAndValidate('UnitId');;//机构id
+            var UnitName = getValueAndValidate('UnitName');//机构名称
+            var ProjectID = $("#SelectionProject").val();//项目id
+            var ProjectName = "";//项目名称
+            var QualifiedPath = getValueAndValidate('QualifiedPath');//合格存放地址
+            var UnqualifiedPath = getValueAndValidate('UnqualifiedPath');//不合格存放地址
+            var Name = getValueAndValidate('Name');//设置模板名称
+
+            var NameRule = "";//文件命名规则
+            var Is_FileNamingRules = "false";
+            var checked = $("#Is_FileNamingRules").is(':checked');//是否设置文件命名规则
+            if (checked) {
+                Is_FileNamingRules = "true";
+                NameRule = getValueAndValidate('NameRule');
+            }
+
+            var PictureType = "";//图片格式
+            var Is_PictureFormat = "false";
+            var checked = $("#Is_PictureFormat").is(':checked');//是否设置图片格式
+            if (checked) {
+                PictureType = getValueAndValidate('PictureType');
+                Is_PictureFormat = "true";
+            }
+
+            var SizeMin = "";//图像最小值
+            var SizeMax = "";//图像最大值
+            var Is_ImageSizeRange = "false";
+            var checked = $("#Is_ImageSizeRange").is(':checked');//是否设置图像大小范围
+            if (checked) {
+                SizeMin = getValueAndValidate('SizeMin');//图像最小值
+                SizeMax = getValueAndValidate('SizeMax');//图像最大值
+                Is_ImageSizeRange = "true";
+            }
+
+            var RectifyMin = "";//纠偏最小值
+            var RectifyMax = "";//纠偏最大值
+            var Is_CorrectionRange = "false";
+            var checked = $("#Is_CorrectionRange").is(':checked');//是否设置纠偏范围
+            if (checked) {
+                RectifyMin = getValueAndValidate('RectifyMin');//纠偏最小值
+                RectifyMax = getValueAndValidate('RectifyMax');//纠偏最大值
+                Is_CorrectionRange = true;
+            }
+
+            var ResolutionMin = "";//分辨率最小值
+            var ResolutionMax = "";//分辨率最大值
+            var Is_ResolutionRange = "false";
+            var checked = $("#Is_ResolutionRange").is(':checked');//是否设置分辨率范围
+            if (checked) {
+                ResolutionMin = getValueAndValidate('ResolutionMin');//分辨率最小值
+                ResolutionMax = getValueAndValidate('ResolutionMax');//分辨率最大值
+                Is_ResolutionRange = "true";
+            }
+
+            var ImplicitWatermarks = "";//隐式水印
+            var DisplayWatermarks = ""; //显性水印
+            var Is_AddingWatermark = "false";
+            var checked = $("#Is_AddingWatermark").is(':checked');//是否添加水印
+            if (checked) {
+                ImplicitWatermarks = $("#ImplicitWatermarks").is(':checked');//隐式水印
+                DisplayWatermarks = $("#DisplayWatermarks").is(':checked');//显示水印
+                Is_AddingWatermark = "true";
+            }
+
+            //var BrightMin = "";//亮度最小值
+            //var BrightMax = "";//亮度最大值
+            //var checked = $("#Is_LuminanceRange").is(':checked');//是否设置亮度单位
+            //if (checked) {
+            //     BrightMin = getValueAndValidate('BrightMin');//亮度最小值
+            //     BrightMax = getValueAndValidate('BrightMax');//亮度最大值
+            //}
+
+            //var ClarityMin = "";//图片清晰度最小值
+            //var ClarityMax = "";//图片清晰度最大值
+            //var checked = $("#Is_DefinitionRange").is(':checked');//是否设置图片清晰范围
+            //if (checked) {
+            //     ClarityMin = getValueAndValidate('ClarityMin');//图片清晰度最小值
+            //     ClarityMax = getValueAndValidate('ClarityMax');//图片清晰度最大值
+            //}
+
+
+
+            //if (UnitId == '') {
+            //    layer.alert('机构不能为空！', {
+            //        title: '提示',
+            //        icon: 2,
+            //        yes: function (index) {
+            //            layer.close(index);
+            //        }
+            //    });
+            //    return;
+            //}
+            //}
+
+            var row = $('#setting_table').bootstrapTable('getSelections');
+            if (row.length > 0) {
+                var Id = row[0].Id;//条目id
+            }
+
+            var url = "";
+            var data = "";
+            var meth = "";
+            if (type != undefined && type != null && type == "edit") {
+                url = "/api/DetectionSetting/EditDetectionSetting";
+                data = { Id: Id, UnitId: UnitId, UnitName: UnitName, ProjectID: ProjectID, ProjectName: ProjectName, Name: Name, NameRule: NameRule, SizeMin: SizeMin, SizeMax: SizeMax, ResolutionMin: ResolutionMin, ResolutionMax: ResolutionMax, RectifyMin: RectifyMin, RectifyMax: RectifyMax, ImplicitWatermarks: ImplicitWatermarks, DisplayWatermarks: DisplayWatermarks, PictureType: PictureType, QualifiedPath: QualifiedPath, UnqualifiedPath: UnqualifiedPath, Is_FileNamingRules: Is_FileNamingRules, Is_PictureFormat: Is_PictureFormat, Is_ImageSizeRange: Is_ImageSizeRange, Is_CorrectionRange: Is_CorrectionRange, Is_ResolutionRange: Is_ResolutionRange, Is_AddingWatermark: Is_AddingWatermark };
+                meth = 'put';
+            } else {
+                url = "/api/DetectionSetting/AddDetectionSetting";
+                data = { UnitId: UnitId, UnitName: UnitName, ProjectID: ProjectID, ProjectName: ProjectName, Name: Name, NameRule: NameRule, SizeMin: SizeMin, SizeMax: SizeMax, ResolutionMin: ResolutionMin, ResolutionMax: ResolutionMax, RectifyMin: RectifyMin, RectifyMax: RectifyMax, ImplicitWatermarks: ImplicitWatermarks, DisplayWatermarks: DisplayWatermarks, PictureType: PictureType, QualifiedPath: QualifiedPath, UnqualifiedPath: UnqualifiedPath, Is_FileNamingRules: Is_FileNamingRules, Is_PictureFormat: Is_PictureFormat, Is_ImageSizeRange: Is_ImageSizeRange, Is_CorrectionRange: Is_CorrectionRange, Is_ResolutionRange: Is_ResolutionRange, Is_AddingWatermark: Is_AddingWatermark };
+                meth = 'post';
+            }
+
+            $.ajax({
+                url: url,
+                method: meth,
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (res) {
+                    var res = eval('(' + res + ')');
+                    if (res.Success) {
+                        layer.alert(res.Message, {
+                            title: '提示',
+                            icon: 1,
+                            yes: function (index) {
+                                layer.close(farIndex);
+                                layer.close(index);
+                                getDetectionSettingList();
+                            }
+                        });
+                    } else {
+                        layer.alert(res.Message, {
+                            title: '提示',
+                            icon: 2,
+                            yes: function (index) {
+                                layer.close(index);
+                            }
+                        });
+                    }
+                }
+            });
+        }
+        /****************************新增，修改功能 stop **********************************/
+
+        /****************************删除功能 start ***************************************/
+        function DeleteSettings() {
+            var row = $('#setting_table').bootstrapTable('getSelections');
+
+            if (!row || row == null || row.length == 0) {
+                layer.alert('请选择要删除的行！', {
+                    title: '提示',
+                    icon: 2,
+                    yes: function (index) {
+                        layer.close(index);
+                    }
+                });
+                return;
+            }
+
+            layer.confirm('确定要删除选中的数据吗？', {
+                title: '提示',
+                icon: 3,
+                btn: ['确定', '取消'] //按钮
+            }, function () {
+                var ids = '';
+                for (var i = 0; i < row.length; i++) {
+                    ids += row[i].Id + ',';
+                }
+                ids = ids.substr(0, ids.length - 1);
+
+                operationAction({
+                    url: '/api/DetectionSetting/DelDetectionSettings', data: ids, type: 'delete', successRollback: function (res) {
+                        if (res.Success) {
+                            layer.alert(res.Message, {
+                                title: '提示',
+                                icon: 1,
+                                yes: function (index) {
+                                    layer.close(index);
+                                    getDetectionSettingList();
+                                }
+                            });
+                        } else {
+                            layer.alert(res.Message, {
+                                title: '提示',
+                                icon: 2,
+                                yes: function (index) {
+                                    layer.close(index);
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        }
+
+        /****************************删除功能 stop ***************************************/
+
+        /****************************搜索功能 start ***************************************/
+        //搜索回车
+        $('#keyword').bind('keypress', function (event) {
+            if (event.keyCode == "13") {
+                getDetectionSettingList();
+                return;
+
+            }
+        });
+
+        //搜索项目
+        function search() {
+            var keyWord = $.trim($('#keyword').val());
+            getDetectionSettingList();
+        }
+        /****************************搜索功能 stop *********************************************/
+    
+        /************************权限控制按钮  start ***************************************/
+        function loadControl() {
+            var controlMenuHtml = "";
+            if (parent.checkUserAndPermission('/api/DetectionSetting/AddDetectionSetting')) {
+                controlMenuHtml += "<button class=\"button button_blue\" onclick=\"OnclickAdd()\">新增</button>";
+            }
+            if (parent.checkUserAndPermission('/api/DetectionSetting/EditDetectionSetting')) {
+                controlMenuHtml += "<button class=\"button button_blue\" onclick=\"OnclickEdit()\">修改</button>";
+            }
+            if (parent.checkUserAndPermission('/api/DetectionSetting/DelDetectionSettings')) {
+                controlMenuHtml += "<button class=\"button button_orange\" onclick=\"DeleteSettings()\">删除</button>";
+            }
+            controlMenuHtml += "<button class=\"button button_blue\">详情</button><input class=\"title_search\" id=\"keyword\" placeholder=\"请输入模板名称查询！\"/><button class=\"button button_blue\" onclick=\"search()\">搜索</button> <div class=\"head-icon-right01\"><img class=\"logo-img\" src=\"../Images/pic02.png\" /></div>";
+
+            $('#btnGroup').html(controlMenuHtml);//将控件加入页面
+        }
+        /************************权限控制按钮  stop ********************************/
+    </script>
+</body>
+</html>
+
+

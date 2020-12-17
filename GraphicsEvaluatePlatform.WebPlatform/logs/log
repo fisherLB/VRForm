@@ -1,0 +1,194 @@
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:28:40.397] ProjectManagementService.Error 6 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:30:38.538] ProjectManagementService.Error 5 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:31:36.857] ProjectManagementService.Error 13 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:31:57.121] ProjectManagementService.Error 5 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:32:18.512] ProjectManagementService.Error 13 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:32:30.626] ProjectManagementService.Error 20 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:35:15.037] ProjectManagementService.Error 19 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:35:17.812] ProjectManagementService.Error 19 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:38:57.224] ProjectManagementService.Error 13 
+GetList 发生异常
+
+===================== Application_Error_End =====================
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetList(BootstrapPager pager) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 46
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:41:59.479] ProjectManageService.Error 13 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.InvalidCastException: 无法将类型为“System.Data.DataSet”的对象强制转换为类型“System.Data.DataTable”。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:44:10.695] ProjectManageService.Error 25 
+GetListForExport 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'p_contrator' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 372
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetListForExport(BootstrapPager pager)
+ClientConnectionId:858d37ad-0834-40eb-8a2f-a8f7f82f3acb
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:44:10.730] ProjectManageService.Error 25 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:44:46.625] ProjectManageService.Error 13 
+GetListForExport 发生异常
+
+===================== Application_Error_End =====================
+System.Data.SqlClient.SqlException (0x80131904): 列名 'p_contrator' 无效。
+   在 GraphicsEvaluatePlatform.Repository.SqlServerHelper.Query(String SQLString, SqlParameter[] cmdParms) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlServerHelper.cs:行号 320
+   在 GraphicsEvaluatePlatform.Repository.SqlDataBase.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\SqlDataBase.cs:行号 372
+   在 GraphicsEvaluatePlatform.Repository.DataBll.GetDataSetList(String tableName, Int32 pageNum, Int32 currentlyPage, String cols, String where, String sort, String col) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Repository\DataBll.cs:行号 163
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.GetListForExport(BootstrapPager pager)
+ClientConnectionId:858d37ad-0834-40eb-8a2f-a8f7f82f3acb
+Error Number:207,State:1,Class:16
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:45:38.487] ProjectManageService.Error 13 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:45:49.330] ProjectManageService.Error 29 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:47:42.662] ProjectManageService.Error 5 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 472
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:51:30.229] ProjectManageService.Error 10 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows) 位置 C:\Users\LiangShiRen\Desktop\图像测评系统\工作目录\设计源码\开发源码\GraphicsEvaluatePlatform\GraphicsEvaluatePlatform.Service\ProjectManagementService.cs:行号 472
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:54:28.953] ProjectManageService.Error 8 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:54:45.401] ProjectManageService.Error 5 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:55:23.606] ProjectManageService.Error 21 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:55:31.905] ProjectManageService.Error 13 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)
+
+===================== Application_Error_Start =====================
+[2018-05-15 09:56:49.627] ProjectManageService.Error 23 
+Export 发生异常
+
+===================== Application_Error_End =====================
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 GraphicsEvaluatePlatform.Service.ProjectManagementService.Export(String filePath, String unitId, String value, String ids, Int32 rows)

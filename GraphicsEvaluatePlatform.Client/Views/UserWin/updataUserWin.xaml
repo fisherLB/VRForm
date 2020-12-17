@@ -1,0 +1,77 @@
+﻿<Window x:Class="GraphicsEvaluatePlatform.Client.Views.UserWin.updataUserWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicsEvaluatePlatform.Client.Views.UserWin"
+        mc:Ignorable="d"
+        Title="修改用户" Height="603" Width="650">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/d_bg01.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock02" Margin="24,21,0,0" TextWrapping="Wrap" Text="修改用户" Foreground="White" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <!--<Button x:Name="close02" Content="关闭" HorizontalAlignment="Right" Margin="0,22.085,19.5,0" Width="12" Height="12"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Top" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/close.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="min05" Content="最小化" HorizontalAlignment="Right" Margin="0,22.085,40.834,0" Width="12" Height="12"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Top" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/min.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>-->
+        <TextBox x:Name="us_id" HorizontalAlignment="Left" Height="23" Margin="30,82,0,0" TextWrapping="Wrap" Text="条目ID：" VerticalAlignment="Top" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" IsReadOnly="True" Visibility="Hidden"/>
+        <TextBox x:Name="user_input08" Margin="107,80,57,0" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="30" VerticalAlignment="Top" Text="{Binding Us_id}" Visibility="Hidden"/>
+
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="30,82,0,0" TextWrapping="Wrap" Text="姓名：" VerticalAlignment="Top" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <TextBox x:Name="user_input04" Margin="107,80,57,0" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="30" VerticalAlignment="Top" Text="{Binding Us_name}"/>
+
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="32,138,0,0" TextWrapping="Wrap" Text="用户名：" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" Height="23" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox x:Name="user_input" Margin="109,135,55,0" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="30" VerticalAlignment="Top" Text="{Binding Us_account}"/>
+
+        <TextBox x:Name="pw01" HorizontalAlignment="Left" Height="23" Margin="32,193,0,0" TextWrapping="Wrap" Text="密码：" VerticalAlignment="Top" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <TextBox x:Name="user_input05" Margin="109,190,55,0" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="30" VerticalAlignment="Top" Text="{Binding Us_Password}"/>
+
+        <TextBox x:Name="pw02" HorizontalAlignment="Left" Margin="32,247,0,0" TextWrapping="Wrap" Text="确认密码：" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" Height="23" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox x:Name="user_input02" Margin="109,244,55,0" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="30" VerticalAlignment="Top" Text="{Binding Ok_Us_Password}"/>
+
+        <TextBox x:Name="user_info" HorizontalAlignment="Left" Margin="29,0,0,252" TextWrapping="Wrap" Text="用户身份：" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" Height="23" VerticalAlignment="Bottom" IsReadOnly="True"/>
+        <ComboBox x:Name="user_input06" Margin="107,0,56,252" Background="White" BorderBrush="#FF648693" Height="30" VerticalAlignment="Bottom" ItemsSource="{Binding Us_type}"/>
+
+        <TextBox x:Name="user_state" HorizontalAlignment="Left" Margin="30,0,0,211" TextWrapping="Wrap" Text="是否激活：" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" Height="23" VerticalAlignment="Bottom" IsReadOnly="True"/>
+        <ComboBox x:Name="user_input07" Margin="108,0,55,211" Background="White" BorderBrush="#FF648693" Height="30" VerticalAlignment="Bottom" ItemsSource="{Binding Us_type}"/>
+
+
+        <TextBox x:Name="user_remark" HorizontalAlignment="Left" Margin="30,0,0,137" TextWrapping="Wrap" Text="备注：" Width="73" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalContentAlignment="Right" Height="23" VerticalAlignment="Bottom" IsReadOnly="True"/>
+        <TextBox x:Name="user_input03" Margin="107,0,57,86" TextWrapping="Wrap" VerticalContentAlignment="Center" BorderBrush="#FF648693" SelectionOpacity="0.1" Height="97" VerticalAlignment="Bottom" Text="{Binding Us_remark}"/>
+
+        <Button x:Name="confirm02" Content="确定" HorizontalAlignment="Left" Margin="240.513,0,0,20.583" Width="80" Height="30"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" UseLayoutRounding="True" Command="{Binding updataUserCommand}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/confirm.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="cancel02" Content="取消" HorizontalAlignment="Right" Margin="0,0,240.173,20.583" Width="80" Height="30"  BorderThickness="0" Foreground="White"  Background="{x:Null}" Cursor="Hand" VerticalAlignment="Bottom" UseLayoutRounding="True" Click="cancel02_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentControl x:Name="cc">
+                        <Image Source="/Images/cancel.png" />
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
